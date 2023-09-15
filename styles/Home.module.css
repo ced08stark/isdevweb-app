@@ -127,3 +127,26 @@
     filter: invert(1);
   }
 }
+
+.videoSlide p{
+  animation: animate .4s linear .4s backwards;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.videoSlide video{
+  animation: fadeIn .4s linear;
+}
+
+@keyframes fadeIn {
+  0%{
+      transform: scale(5);
+  }
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: scale(5)  translateY(-50px);
+  }
+}
+
